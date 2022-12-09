@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("../img/bg-login.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 2rem;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0 #00000060;
+}
+
+legend {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #001a5c;
+}
+
+.textfield input {
+  width: 100%;
+  padding: 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #001a5c;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 1rem;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.textfield {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.textfield input:focus {
+  border-bottom: 2px solid #3b409e;
+}
+
+.textfield label {
+  color: #001a5c;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.textfield input:focus + label,
+.textfield input:valid + label {
+  font-size: 0.7rem;
+  margin-top: 0;
+  color: #3b409e;
+}
+
+button {
+  background-color: transparent;
+  border-color: #001a5c;
+  color: #001a5c;
+  padding: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #001a5c99;
+  color: #ffffff80;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p {
+  color: #001a5c;
+  text-align: center;
+}
+
+a {
+  color: #873cb8;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: #001a5c;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #0d009c;
+}
+
+#msgError {
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

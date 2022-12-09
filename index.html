@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Seo -->
+    <meta name="author" content="Pedro Henrique">
+    <meta name="description" content="Sistema de login com armazenamento no navegador">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form>
+                <fieldset style="border: none;">
+                    <legend>Login</legend>
+
+                    <div id="msgError"></div>
+                    
+                    <div class="textfield">
+                        <input type="text" name="email" id="inputUsuario" required>
+                        <label id="labelUsuario" for="inputUsuario">Usuário</label>
+                    </div>
+
+                    <div class="textfield">
+                        <input type="password" name="senha" id="inputSenha" required>
+                        <label id="labelSenha" for="inputSenha">Senha</label>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="justify-center">
+                        <button type="submit" id="logar">Entrar</button>
+                    </div>
+
+                    <div class="justify-center">
+                        <hr>
+                    </div>
+
+                    <p>Ainda não tem uma conta? <a href="./cadastro.html">Criar conta</a></p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script's -->
+    <script src="./src/js/index.js"></script>
+
+</body>
+
+</html>

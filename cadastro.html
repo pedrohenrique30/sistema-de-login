@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/css/cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Seo -->
+    <meta name="author" content="Pedro Henrique">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form>
+                <fieldset style="border: none;">
+                    <legend>Crie sua conta</legend>
+
+                    <div id="msgError"></div>
+                    <div id="msgSucess"></div>
+
+                    <div class="textfield">
+                        <input type="text" name="nome" id="inputNome" required>
+                        <label id="labelNome" for="inputNome">Nome</label>
+                    </div>
+
+                    <div class="textfield">
+                        <input type="tel" name="telefone" id="inputTelefone" required>
+                        <label id="labelTelefone" for="inputTelefone">Telefone</label>
+                    </div>
+
+                    <div class="textfield">
+                        <input type="text" name="email" id="inputUsuario" required>
+                        <label id="labelUsuario" for="inputUsuario">Usuário</label>
+                    </div>
+
+                    <div class="textfield">
+                        <input type="password" name="senha" id="inputSenha" required>
+                        <label id="labelSenha" for="inputSenha">Senha</label>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="textfield">
+                        <input type="password" name="confirmarSenha" id="inputConfSenha" required>
+                        <label id="labelConfSenha" for="inputConfSenha">Confirmar senha</label>
+                        <i id="verConfSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="justify-center">
+                        <button type="submit" id="cadastrar">Criar conta</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script's -->
+    <script src="./src/js/cadastro.js"></script>
+
+</body>
+
+</html>

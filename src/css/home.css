@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("../img/bg-home.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #06292f;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 2rem;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0 #00000060;
+}
+
+button {
+  background-color: transparent;
+  border-color: #06292f;
+  color: #06292f;
+  padding: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #06292f99;
+  color: #ffffff80;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
